@@ -5,9 +5,9 @@
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "ATX Clear Bra",
-  "description": "Austin's dedicated paint protection film removal specialists.",
-  "url": "https://atxclearbra.com",
+  "name": "Texas Shine",
+  "description": "Austin's dedicated paint whisperer.",
+  "url": "https://texasshine.com",
   "telephone": "+15126638976",
   "email": "texasshine@gmail.com",
   "address": {
@@ -24,618 +24,698 @@
   ]
 }
 </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PPF Removal Austin TX | Clear Bra Removal Specialists | ATX Clear Bra</title>
-  <meta name="description" content="Austin's dedicated paint protection film removal specialists. Yellowing, peeling, or cracking clear bra? We safely remove aging PPF. Book an inspection today." />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas Shine - Choose Your Reality</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    :root {
-      --black:   #0a0a0a;
-      --dark:    #111111;
-      --mid:     #1c1c1c;
-      --border:  #2a2a2a;
-      --muted:   #888;
-      --light:   #d4d4d4;
-      --white:   #f5f5f5;
-      --gold:    #c9a84c;
-      --gold2:   #e8c96a;
-      --font:    'Georgia', serif;
-      --sans:    system-ui, -apple-system, sans-serif;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #0a0a0a;
+        }
 
-    html { scroll-behavior: smooth; }
-    body { background: var(--black); color: var(--light); font-family: var(--sans); font-size: 16px; line-height: 1.7; }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-    /* ── NAV ── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 1rem 2rem;
-      background: rgba(10,10,10,0.95);
-      border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(10px);
-    }
-    .nav-logo { font-family: var(--font); font-size: 1.1rem; color: var(--gold); text-decoration: none; letter-spacing: 0.05em; font-weight: bold; }
-    .nav-links { display: flex; gap: 2rem; list-style: none; }
-    .nav-links a { color: var(--muted); text-decoration: none; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; transition: color 0.2s; }
-    .nav-links a:hover { color: var(--white); }
-    .nav-cta { background: var(--gold); color: var(--black) !important; padding: 0.5rem 1.2rem; font-weight: 600 !important; }
-    .nav-cta:hover { background: var(--gold2) !important; }
-    .nav-toggle { display: none; background: none; border: none; cursor: pointer; }
-    .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--light); margin: 5px 0; transition: 0.3s; }
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            position: relative;
+            overflow: hidden;
+        }
 
-    /* ── HERO ── */
-    #hero {
-      min-height: 100vh; display: flex; align-items: center;
-      padding: 8rem 2rem 4rem;
-      background: linear-gradient(rgba(10,10,10,0.7), rgba(10,10,10,0.9)), url('images/hero.jpg');
-      background-size: cover; background-position: center;
-      border-bottom: 1px solid var(--border);
-    }
-    .hero-inner { max-width: 800px; margin: 0 auto; text-align: center; }
-    .hero-eyebrow { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; display: block; }
-    .hero-inner h1 { font-family: var(--font); font-size: clamp(2.8rem, 8vw, 4.5rem); color: var(--white); line-height: 1.1; margin-bottom: 1.5rem; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
-    .hero-inner h1 em { font-style: italic; color: var(--gold); }
-    .hero-sub { font-size: 1.25rem; color: var(--light); max-width: 600px; margin: 0 auto 1rem; line-height: 1.6; }
-    .hero-warning { font-size: 0.95rem; color: #ff8080; margin-bottom: 2.5rem; font-weight: 500; }
-    .btn { display: inline-block; padding: 1rem 2.5rem; font-size: 0.9rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 700; text-decoration: none; transition: all 0.3s ease; cursor: pointer; border: none; }
-    .btn-primary { background: var(--gold); color: var(--black); box-shadow: 0 4px 15px rgba(201,168,76,0.3); }
-    .btn-primary:hover { background: var(--gold2); transform: translateY(-2px); }
-    .btn-ghost { border: 1px solid var(--border); color: var(--white); background: rgba(255,255,255,0.05); margin-left: 1rem; }
-    .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(37, 99, 235, 0.1) 0%, transparent 50%);
+            animation: pulse 8s ease-in-out infinite;
+        }
 
-    /* ── SECTIONS ── */
-    section { padding: 7rem 2rem; }
-    .inner { max-width: 820px; margin: 0 auto; }
-    .inner-wide { max-width: 1100px; margin: 0 auto; }
-    h2 { font-family: var(--font); font-size: clamp(2rem, 5vw, 2.8rem); color: var(--white); line-height: 1.2; margin-bottom: 1.5rem; }
-    h3 { font-size: 1.1rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.75rem; }
-    p { color: var(--light); margin-bottom: 1.2rem; font-size: 1.05rem; }
-    .label { display: inline-block; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); padding: 0.3rem 0.8rem; margin-bottom: 1.5rem; }
-    .divider { border: none; border-top: 1px solid var(--border); margin: 0; }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
 
-    /* ── PROBLEM ── */
-    #problem { background: var(--dark); }
-    .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; margin-top: 4rem; }
-    .problem-card { border: 1px solid var(--border); background: var(--mid); overflow: hidden; transition: transform 0.3s ease; }
-    .problem-card:hover { transform: translateY(-5px); border-color: #5a2020; }
-    .problem-img { width: 100%; height: 250px; object-fit: cover; border-bottom: 1px solid var(--border); filter: grayscale(30%); transition: filter 0.3s; }
-    .problem-card:hover .problem-img { filter: grayscale(0%); }
-    .problem-content { padding: 2rem; }
-    .problem-card h3 { color: #e07070; }
-    .problem-card p { font-size: 0.95rem; color: var(--muted); margin: 0; }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
 
-    /* ── AUTHORITY ── */
-    #authority { background: var(--black); }
-    .quote-block { border-left: 4px solid var(--gold); padding: 1.5rem 2rem; margin: 3rem 0; background: var(--mid); }
-    .quote-block p { font-family: var(--font); font-style: italic; font-size: 1.2rem; color: var(--white); margin: 0; line-height: 1.5; }
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #dc2626 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-    /* ── SERVICES ── */
-    #services { background: var(--dark); }
-    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
-    .service-card { border: 1px solid var(--border); padding: 2.5rem 2rem; background: var(--black); transition: all 0.3s ease; }
-    .service-card:hover { border-color: var(--gold); background: var(--mid); transform: scale(1.02); }
-    .service-card h3 { color: var(--gold); margin-bottom: 0.5rem; }
-    .service-card .coverage { font-size: 0.85rem; color: var(--muted); text-transform: none; letter-spacing: 0; margin-bottom: 1.5rem; font-style: italic; }
-    .service-card p { font-size: 0.95rem; color: var(--light); margin: 0; }
-    .addons { margin-top: 4rem; border: 1px solid var(--border); padding: 2rem; background: var(--mid); text-align: center; }
-    .addons h3 { color: var(--muted); margin-bottom: 1.5rem; }
-    .addon-list { display: flex; gap: 1.5rem; flex-wrap: wrap; list-style: none; justify-content: center; }
-    .addon-list li { font-size: 0.9rem; color: var(--light); border: 1px solid var(--border); padding: 0.5rem 1.2rem; background: var(--black); }
+        .subhead {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            color: #9ca3af;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
+        }
 
-    /* ── VEHICLES ── */
-    #vehicles { background: var(--black); text-align: center; }
-    .vehicle-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 3rem; list-style: none; }
-    .vehicle-list li { font-size: 0.85rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); border: 1px solid var(--border); padding: 0.6rem 1.5rem; transition: all 0.3s; }
-    .vehicle-list li:hover { border-color: var(--gold); color: var(--gold); background: rgba(201,168,76,0.05); }
+        .btn {
+            display: inline-block;
+            padding: 18px 40px;
+            margin: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
 
-    /* ── PROCESS ── */
-    #process { background: var(--dark); }
-    .process-container { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; margin-top: 4rem; }
-    .process-img-wrap { position: relative; border: 1px solid var(--border); }
-    .process-img-wrap img { width: 100%; display: block; filter: brightness(0.8); }
-    .process-img-wrap::after { content: ''; position: absolute; top: 20px; left: 20px; right: -20px; bottom: -20px; border: 1px solid var(--gold); z-index: -1; }
-    .process-steps { display: flex; flex-direction: column; gap: 1.5rem; }
-    .step { display: flex; gap: 1.5rem; align-items: flex-start; padding: 1.5rem; border: 1px solid var(--border); background: var(--black); transition: border-color 0.3s; }
-    .step:hover { border-color: var(--gold); }
-    .step-num { font-family: var(--font); font-size: 1.8rem; color: var(--gold); line-height: 1; opacity: 0.5; }
-    .step-content h3 { color: var(--white); font-size: 0.9rem; margin-bottom: 0.4rem; }
-    .step-content p { font-size: 0.9rem; color: var(--muted); margin: 0; }
+        .btn-primary {
+            background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+            color: white;
+        }
 
-    /* ── RISK ── */
-    #risk { background: var(--black); }
-    .risk-box { border: 1px solid #5a2020; background: #1a0e0e; padding: 2.5rem; margin-top: 3rem; }
-    .risk-box ul { list-style: none; margin-top: 1.5rem; }
-    .risk-box ul li { padding: 0.6rem 0; border-bottom: 1px solid #2a1515; font-size: 1rem; color: var(--light); }
-    .risk-box ul li::before { content: "— "; color: #e07070; font-weight: bold; }
-    .risk-box ul li:last-child { border-bottom: none; }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(220, 38, 38, 0.4);
+        }
 
-    /* ── BEAUTY ── */
-    #beauty { background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.8)), url('images/beauty.jpg'); background-size: cover; background-position: center; text-align: center; padding: 10rem 2rem; }
-    #beauty h2 { font-style: italic; font-size: 3.5rem; }
-    #beauty .tagline { font-size: 1.5rem; color: var(--gold); margin: 2rem 0 1rem; font-family: var(--font); font-style: italic; }
+        .btn-secondary {
+            background: transparent;
+            border: 2px solid #3b82f6;
+            color: #3b82f6;
+        }
 
-    /* ── CTA BAND ── */
-    #cta-band { background: var(--gold); padding: 5rem 2rem; text-align: center; }
-    #cta-band h2 { color: var(--black); font-family: var(--font); font-size: clamp(1.8rem, 5vw, 2.8rem); margin-bottom: 1rem; }
-    #cta-band p { color: #3a2e00; margin-bottom: 2.5rem; font-weight: 500; font-size: 1.1rem; }
-    #cta-band .btn { background: var(--black); color: var(--gold); padding: 1.2rem 3rem; }
-    #cta-band .btn:hover { background: #1c1c1c; transform: scale(1.05); }
+        .btn-secondary:hover {
+            background: #3b82f6;
+            color: white;
+            transform: translateY(-2px);
+        }
 
-    /* ── FORM ── */
-    #book { background: var(--dark); }
-    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
-    .form-group { display: flex; flex-direction: column; gap: 0.6rem; }
-    .form-group.full { grid-column: 1 / -1; }
-    label { font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
-    input, select, textarea { background: var(--black); border: 1px solid var(--border); color: var(--white); padding: 1rem; font-size: 1rem; font-family: var(--sans); width: 100%; outline: none; transition: all 0.2s; appearance: none; }
-    input:focus, select:focus, textarea:focus { border-color: var(--gold); background: var(--mid); }
-    select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23c9a84c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; background-size: 1.2em; }
-    select option { background: var(--dark); }
-    textarea { resize: vertical; min-height: 120px; }
-    .form-submit { margin-top: 2rem; }
-    .form-note { font-size: 0.85rem; color: var(--muted); margin-top: 1.5rem; }
-    #form-status { margin-top: 1.5rem; font-size: 1rem; min-height: 1.5em; }
-    #form-status.success { color: #6dbf7e; font-weight: 600; }
-    #form-status.error   { color: #e07070; font-weight: 600; }
+        /* Section Styling */
+        section {
+            padding: 100px 0;
+        }
 
-    /* ── FOOTER ── */
-    footer { background: var(--black); border-top: 1px solid var(--border); padding: 5rem 2rem; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 4rem; }
-    .footer-brand p { margin-top: 1.5rem; max-width: 300px; color: var(--muted); font-size: 0.95rem; }
-    .footer-links h4 { color: var(--white); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.1em; margin-bottom: 1.5rem; }
-    .footer-links ul { list-style: none; }
-    .footer-links ul li { margin-bottom: 0.8rem; }
-    .footer-links ul a { color: var(--muted); text-decoration: none; font-size: 0.95rem; transition: color 0.2s; }
-    .footer-links ul a:hover { color: var(--gold); }
-    .footer-bottom { background: var(--black); padding: 2rem; text-align: center; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+        section:nth-child(even) {
+            background: #0f0f0f;
+        }
 
-    /* ── RESPONSIVE ── */
-    @media (max-width: 900px) {
-      .problem-grid, .service-grid, .process-container, footer { grid-template-columns: 1fr; }
-      .process-img-wrap { order: -1; }
-      .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--dark); padding: 1rem 2rem; border-bottom: 1px solid var(--border); gap: 1rem; }
-      .nav-links.open { display: flex; }
-      .nav-toggle { display: block; }
-      .btn-ghost { margin-left: 0; margin-top: 1rem; }
-    }
-  </style>
+        h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            margin-bottom: 1.5rem;
+            color: #fff;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #b0b0b0;
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        ul li {
+            padding: 0.5rem 0 0.5rem 2rem;
+            position: relative;
+            color: #b0b0b0;
+        }
+
+        ul li::before {
+            content: '•';
+            position: absolute;
+            left: 0.5rem;
+            color: #dc2626;
+            font-size: 1.5rem;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            text-align: center;
+        }
+
+        .how-it-works p {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Pill Section */
+        .pill-intro {
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 5rem;
+        }
+
+        .pills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .pill-card {
+            background: #1a1a1a;
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+        }
+
+        .red-pill::before {
+            background: linear-gradient(90deg, #dc2626, #991b1b);
+        }
+
+        .blue-pill::before {
+            background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+        }
+
+        .pill-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .red-pill:hover {
+            box-shadow: 0 15px 40px rgba(220, 38, 38, 0.3);
+        }
+
+        .blue-pill:hover {
+            box-shadow: 0 15px 40px rgba(37, 99, 235, 0.3);
+        }
+
+        .pill-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .pill-label {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .red-pill .pill-label {
+            color: #dc2626;
+        }
+
+        .blue-pill .pill-label {
+            color: #3b82f6;
+        }
+
+        .pill-tagline {
+            font-size: 1.2rem;
+            color: #9ca3af;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .pill-cta {
+            display: inline-block;
+            padding: 12px 30px;
+            margin-top: 1.5rem;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .red-pill .pill-cta {
+            background: #dc2626;
+            color: white;
+        }
+
+        .red-pill .pill-cta:hover {
+            background: #991b1b;
+        }
+
+        .blue-pill .pill-cta {
+            background: #3b82f6;
+            color: white;
+        }
+
+        .blue-pill .pill-cta:hover {
+            background: #1d4ed8;
+        }
+
+        /* Decision Help */
+        .decision-help {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            text-align: center;
+        }
+
+        .decision-help p {
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Form Section */
+        .application-form {
+            background: #0a0a0a;
+        }
+
+        form {
+            max-width: 700px;
+            margin: 3rem auto 0;
+            background: #1a1a1a;
+            padding: 3rem;
+            border-radius: 16px;
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #e0e0e0;
+            font-weight: 500;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            background: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 6px;
+            color: #e0e0e0;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #dc2626;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-note {
+            background: #0f0f0f;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            border-left: 4px solid #dc2626;
+        }
+
+        /* FAQ */
+        .faq {
+            background: #0f0f0f;
+        }
+
+        .faq-item {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .faq-item h4 {
+            color: #dc2626;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Closing */
+        .closing {
+            text-align: center;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            padding: 120px 0;
+        }
+
+        .closing p {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.2rem;
+        }
+
+        .blockquote {
+            max-width: 600px;
+            margin: 3rem auto;
+            padding: 2rem;
+            border-left: 4px solid #dc2626;
+            background: #1a1a1a;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #9ca3af;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .pills-container {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            form {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-
-<nav>
-  <a class="nav-logo" href="#">ATX CLEAR BRA</a>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#problem">The Problem</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#process">Process</a></li>
-    <li><a href="#risk">Risk</a></li>
-    <li><a href="#book" class="nav-cta">Book Inspection</a></li>
-  </ul>
-  <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
-</nav>
-
-<section id="hero">
-  <div class="hero-inner">
-    <span class="hero-eyebrow">Austin's PPF Removal Specialists</span>
-    <h1>Your Clear Bra <em>Doesn't Last Forever.</em></h1>
-    <p class="hero-sub">We safely remove yellowing, cracking, and failing paint protection film to restore your vehicle's natural finish.</p>
-    <p class="hero-warning">⚠️ Brittle film is harder to remove every season you wait.</p>
-    <a href="#book" class="btn btn-primary">Request Inspection →</a>
-    <a href="#services" class="btn btn-ghost">View Services</a>
-  </div>
-</section>
-
-<section id="problem">
-  <div class="inner">
-    <span class="label">The Warning Signs</span>
-    <h2>When Protection Becomes a Liability</h2>
-    <p>PPF has a lifespan. In the Texas sun, that lifespan is often shorter than the warranty suggests. If you're seeing these signs, the film is already failing.</p>
-    <div class="problem-grid">
-      <div class="problem-card">
-        <img src="images/problem-yellow.jpg" alt="Yellowing PPF on car hood" class="problem-img">
-        <div class="problem-content">
-          <h3>Yellowing & Staining</h3>
-          <p>UV exposure and environmental contaminants have permeated the top coat. It's no longer clear; it's an eyesore.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Choose Your Reality.<br>Protect Your Paint.</h1>
+                <p class="subhead">
+                    Texas Shine is appointment-only. No menu. No quick quotes. One car at a time.<br><br>
+                    If you're here, you already know your car deserves more than a drive-through wash or bargain ceramic. The only question is which reality you want to live in every time you see it in the sun.
+                </p>
+                <a href="#application" class="btn btn-primary">Apply For A Spot</a>
+                <a href="#pills" class="btn btn-secondary">See The Two Paths</a>
+            </div>
         </div>
-      </div>
-      <div class="problem-card">
-        <img src="images/problem-cracked.jpg" alt="Cracking PPF on vehicle" class="problem-img">
-        <div class="problem-content">
-          <h3>Cracking & Flaking</h3>
-          <p>The film has become brittle. It no longer peels in sheets; it flakes off in tiny pieces, making removal a surgical process.</p>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>This Is Not A Regular Detail Shop</h2>
+            <p>Texas Shine has always been a dojo, not a volume bay.</p>
+            <p>I work on a tight calendar with a small number of cars. Each one gets full attention. No packages. No instant quotes.</p>
+            <p>Here's how it works:</p>
+            <ul style="max-width: 600px; margin: 2rem auto;">
+                <li>You apply for a spot</li>
+                <li>I review your car and how you use it</li>
+                <li>If it's a fit, I send dates and a realistic range</li>
+                <li>A deposit locks the appointment</li>
+            </ul>
+            <p>Once we know it's a fit, the choice becomes simple.</p>
+            <p style="margin-top: 3rem; font-size: 1.3rem; color: #dc2626;">You decide which philosophy fits your car.</p>
+            <p style="font-size: 1.5rem; font-weight: 600; color: #fff;">Red Pill or Blue Pill.</p>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<hr class="divider">
+    <!-- Pill Moment -->
+    <section id="pills" style="background: #0a0a0a; padding: 120px 0;">
+        <div class="container">
+            <h2>Red Pill or Blue Pill</h2>
+            <div class="pill-intro">
+                <p>Imagine someone sets two options in front of you.</p>
+                <p>Not fantasy. Just two real philosophies about how your paint should live in the world.</p>
+                <ul style="max-width: 500px; margin: 2rem auto;">
+                    <li>One path removes what's failing and returns the paint to reality</li>
+                    <li>The other wraps it in modern protection layers</li>
+                </ul>
+                <p style="margin-top: 2rem; font-size: 1.2rem;">Both paths are honest. Both are valid.</p>
+                <p>
+                    <strong style="color: #dc2626;">Red Pill:</strong> Reality Reset<br>
+                    <strong style="color: #3b82f6;">Blue Pill:</strong> Protection Matrix
+                </p>
+                <p style="margin-top: 2rem; font-style: italic;">The right choice depends on where your paint is now and how you actually use the car.</p>
+            </div>
 
-<section id="authority">
-  <div class="inner">
-    <span class="label">Why Us</span>
-    <h2>23 Years. One Focus.</h2>
-    <p>Nathan has spent over two decades in paint correction and detailing under the Texas Shine Detailing name — helping Austin-area owners preserve and restore their automotive paint.</p>
-    <p>He's seen what happens when aging film gets pulled off by someone who doesn't know what they're doing. Paint lift. Adhesive nightmares. Ruined finishes. Now he's focused on the overlooked side of the industry: safely removing the protection that's overstayed its welcome.</p>
-    <div class="quote-block">
-      <p>"Your car is wearing a giant plastic condom over beautiful paint. At some point, it has to come off — the question is whether it comes off safely."</p>
-    </div>
-    <p style="font-size:0.85rem; color:var(--muted);">— Nathan, Founder · ATX Clear Bra · formerly Texas Shine Detailing</p>
-  </div>
-</section>
+            <div class="pills-container">
+                <!-- Red Pill -->
+                <div class="pill-card red-pill">
+                    <div class="pill-icon">🔴</div>
+                    <h3 class="pill-label">Red Pill: Reality Reset</h3>
+                    <p class="pill-tagline">Remove what's failing. Correct the paint. Return to a known baseline.</p>
+                    
+                    <p><strong>Red Pill is for you if:</strong></p>
+                    <ul>
+                        <li>You have yellowing or failing PPF</li>
+                        <li>Old ceramic coatings that stopped performing</li>
+                        <li>Dealer coatings that never worked</li>
+                        <li>Layered products that only added confusion</li>
+                    </ul>
 
-<hr class="divider">
+                    <p>This path focuses on <strong>removing layers that are no longer serving the paint.</strong></p>
 
-<section id="services">
-  <div class="inner-wide">
-    <div class="inner" style="max-width:820px">
-      <span class="label">Services</span>
-      <h2>What We Remove</h2>
-      <p>Every removal job is different. Coverage area, film age, and vehicle history all affect the process. We inspect before we quote.</p>
-    </div>
-    <div class="service-grid">
-      <div class="service-card">
-        <h3>Partial Panel</h3>
-        <p class="coverage">Mirror caps · door edges · small panels</p>
-        <p>Film applied selectively, or only certain panels showing failure. We target exactly what needs to come off.</p>
-      </div>
-      <div class="service-card">
-        <h3>Front Clip</h3>
-        <p class="coverage">Hood · front fenders · front bumper</p>
-        <p>The most common area for full coverage — and where yellowing and edge lifting appear first. Our most requested service.</p>
-      </div>
-      <div class="service-card">
-        <h3>Full Vehicle</h3>
-        <p class="coverage">All panels · complete removal</p>
-        <p>Every panel. Full adhesive treatment. Complete paint evaluation after removal. Ideal before new film installation or sale.</p>
-      </div>
-    </div>
-    <div class="addons">
-      <h3>Optional Add-Ons</h3>
-      <ul class="addon-list">
-        <li>Adhesive Cleanup</li>
-        <li>Light Polish</li>
-        <li>Paint Correction</li>
-        <li>Ceramic Coating</li>
-      </ul>
-    </div>
-  </div>
-</section>
+                    <p>After removal, the paint is corrected and brought back to baseline. From there, we choose protection based on how you actually drive—not hype or upselling.</p>
 
-<hr class="divider">
+                    <p><strong>Protection may include:</strong></p>
+                    <ul>
+                        <li>Traditional sealants</li>
+                        <li>Ceramic coatings</li>
+                        <li>Strategic film placement</li>
+                        <li>Or simply proper maintenance</li>
+                    </ul>
 
-<section id="vehicles">
-  <div class="inner">
-    <span class="label">Built For</span>
-    <h2>Enthusiast & Luxury Vehicles</h2>
-    <p>We specialize in vehicles where paint integrity matters most.</p>
-    <ul class="vehicle-list">
-      <li>Tesla</li><li>Porsche</li><li>BMW M Series</li><li>Corvette</li>
-      <li>Audi RS</li><li>Rivian</li><li>Mercedes-AMG</li>
-    </ul>
-  </div>
-</section>
+                    <div class="blockquote" style="margin: 2rem 0; font-size: 1rem;">
+                        Sometimes the right move isn't adding another layer. Sometimes it's removing the ones that were never helping.
+                    </div>
 
-<hr class="divider">
+                    <p>Red Pill is about <strong>clarity, honesty, and restoration of reality.</strong></p>
 
-<section id="process">
-  <div class="inner-wide">
-    <div class="inner" style="max-width:820px; margin-bottom:0">
-      <span class="label">How It Works</span>
-      <h2>Safe Removal, Step by Step</h2>
-    </div>
-    <div class="process-container">
-      <div class="process-img-wrap">
-        <img src="images/process.jpg" alt="PPF removal process">
-      </div>
-      <div class="process-steps">
-        <div class="step"><div class="step-num">01</div><div class="step-content"><h3>Film Inspection</h3><p>Evaluate age, coverage, and adhesion before anything starts.</p></div></div>
-        <div class="step"><div class="step-num">02</div><div class="step-content"><h3>Heat Activation</h3><p>Controlled heat softens adhesive without stressing paint.</p></div></div>
-        <div class="step"><div class="step-num">03</div><div class="step-content"><h3>Controlled Peel</h3><p>Slow, methodical removal at the right angle and tension.</p></div></div>
-        <div class="step"><div class="step-num">04</div><div class="step-content"><h3>Adhesive Removal</h3><p>Residue dissolved and removed paint-safely.</p></div></div>
-        <div class="step"><div class="step-num">05</div><div class="step-content"><h3>Paint Evaluation</h3><p>Full assessment post-removal. Next steps recommended.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
+                    <a href="#application" class="pill-cta">Reality Reset Fits Me</a>
+                </div>
 
-<hr class="divider">
+                <!-- Blue Pill -->
+                <div class="pill-card blue-pill">
+                    <div class="pill-icon">🔵</div>
+                    <h3 class="pill-label">Blue Pill: Protection Matrix</h3>
+                    <p class="pill-tagline">Wrap the paint in modern protection systems built for defense.</p>
+                    
+                    <p><strong>Blue Pill is for you if:</strong></p>
+                    <ul>
+                        <li>You want maximum environmental defense</li>
+                        <li>Long-term surface stability matters to you</li>
+                        <li>You're willing to maintain the system properly</li>
+                        <li>Protection gives you peace of mind</li>
+                    </ul>
 
-<section id="risk">
-  <div class="inner">
-    <span class="label">Straight Talk</span>
-    <h2>We'll Be Honest With You</h2>
-    <p>Older film can bond aggressively to paint — especially on vehicles with prior paintwork or film well past its lifespan. We use the safest methods available. But paint lift is a real risk.</p>
-    <div class="risk-box">
-      <p style="color:#e07070; font-size:0.85rem; letter-spacing:0.05em; text-transform:uppercase; font-weight:bold;">Risk increases when:</p>
-      <ul>
-        <li>Film has exceeded its designed lifespan</li>
-        <li>The vehicle has prior body or paint work</li>
-        <li>Paint adhesion was compromised before installation</li>
-      </ul>
-    </div>
-    <p style="margin-top:1.5rem; font-size:0.9rem; color:var(--muted);">Every removal starts with an inspection. Every job requires a signed waiver. We don't make promises about outcomes we can't guarantee.</p>
-  </div>
-</section>
+                    <p>This path places your paint <strong>inside a layered protection strategy.</strong></p>
 
-<hr class="divider">
+                    <p>Modern systems designed to shield the finish from rock chips, UV, contamination, and environmental wear.</p>
 
-<section id="beauty">
-  <div class="inner">
-    <span class="label">The Result</span>
-    <h2>The Paint Was Always the Point</h2>
-    <p>You picked that color for a reason. Paint shines because it's paint — not because something's covering it.</p>
-    <p class="tagline">Natural beauty &gt; manufactured protection.</p>
-    <p style="color:var(--light); font-size:1rem; opacity:0.8;">Restore the depth, clarity, and soul of your vehicle's finish.</p>
-  </div>
-</section>
+                    <p><strong>Protection may include:</strong></p>
+                    <ul>
+                        <li>Paint protection film</li>
+                        <li>Professional ceramic coatings</li>
+                        <li>Layered defense strategies</li>
+                        <li>Strategic coverage based on use</li>
+                    </ul>
 
-<!-- KNOWLEDGE HUB -->
-<section id="learn" style="background:var(--black);">
-  <div class="inner-wide">
-    <div class="inner" style="max-width:820px; margin-bottom:3rem;">
-      <span class="label">PPF Removal Guides</span>
-      <h2>Know Before You Remove</h2>
-      <p>Film removal is a technical process. These guides cover everything from spotting early signs of failure to understanding what removal actually costs — written by someone who has done this work for over two decades.</p>
-    </div>
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem;">
-      <a href="/ppf-removal/when-to-remove.html" style="text-decoration:none;">
-        <div class="service-card">
-          <h3 style="font-size:0.75rem;">Diagnosis</h3>
-          <p style="color:var(--white); font-size:1rem; margin-bottom:0.5rem;">How to Tell When Your PPF Needs to Be Removed</p>
-          <p style="font-size:0.85rem; color:var(--muted); margin:0;">Visual checklist — yellowing, bubbling, cracking, and more.</p>
+                    <p>Blue Pill prioritizes <strong>defense, longevity, and surface stability.</strong></p>
+
+                    <p>This is for owners who want the paint protected as much as possible from the outside world.</p>
+
+                    <a href="#application" class="pill-cta">Protection Matrix Fits Me</a>
+                </div>
+            </div>
         </div>
-      </a>
-      <a href="/ppf-removal/why-clear-bra-yellows.html" style="text-decoration:none;">
-        <div class="service-card">
-          <h3 style="font-size:0.75rem;">Education</h3>
-          <p style="color:var(--white); font-size:1rem; margin-bottom:0.5rem;">Why Clear Bra Turns Yellow</p>
-          <p style="font-size:0.85rem; color:var(--muted); margin:0;">UV degradation explained. What you can do about it.</p>
-        </div>
-      </a>
-      <a href="/ppf-removal/ppf-removal-cost-austin.html" style="text-decoration:none;">
-        <div class="service-card">
-          <h3 style="font-size:0.75rem;">Pricing</h3>
-          <p style="color:var(--white); font-size:1rem; margin-bottom:0.5rem;">PPF Removal Cost in Austin: What Affects the Price</p>
-          <p style="font-size:0.85rem; color:var(--muted); margin:0;">Transparent breakdown of what drives removal pricing.</p>
-        </div>
-      </a>
-      <a href="/ppf-removal/remove-ppf-yourself.html" style="text-decoration:none;">
-        <div class="service-card">
-          <h3 style="font-size:0.75rem;">DIY</h3>
-          <p style="color:var(--white); font-size:1rem; margin-bottom:0.5rem;">Can You Remove PPF Yourself? The Honest Answer</p>
-          <p style="font-size:0.85rem; color:var(--muted); margin:0;">When it works, when it doesn't, and what goes wrong.</p>
-        </div>
-      </a>
-      <a href="/ppf-removal/buying-used-car-ppf.html" style="text-decoration:none;">
-        <div class="service-card">
-          <h3 style="font-size:0.75rem;">Buying Used</h3>
-          <p style="color:var(--white); font-size:1rem; margin-bottom:0.5rem;">Buying a Used Car with PPF: What You Need to Know</p>
-          <p style="font-size:0.85rem; color:var(--muted); margin:0;">Inspection checklist for second-owner buyers.</p>
-        </div>
-      </a>
-      <a href="/ppf-removal/how-long-does-ppf-last.html" style="text-decoration:none;">
-        <div class="service-card">
-          <h3 style="font-size:0.75rem;">Lifespan</h3>
-          <p style="color:var(--white); font-size:1rem; margin-bottom:0.5rem;">How Long Does Paint Protection Film Actually Last?</p>
-          <p style="font-size:0.85rem; color:var(--muted); margin:0;">What affects PPF lifespan and when aging becomes failure.</p>
-        </div>
-      </a>
-      <a href="/ppf-removal/ppf-vs-wrap-removal.html" style="text-decoration:none;">
-        <div class="service-card">
-          <h3 style="font-size:0.75rem;">Comparison</h3>
-          <p style="color:var(--white); font-size:1rem; margin-bottom:0.5rem;">PPF Removal vs Wrap Removal: Not the Same Job</p>
-          <p style="font-size:0.85rem; color:var(--muted); margin:0;">Why PPF removal is harder and takes longer.</p>
-        </div>
-      </a>
-      <a href="/ppf-removal/tesla-ppf-removal.html" style="text-decoration:none;">
-        <div class="service-card">
-          <h3 style="font-size:0.75rem;">Tesla</h3>
-          <p style="color:var(--white); font-size:1rem; margin-bottom:0.5rem;">Tesla PPF Removal: What Makes It Different</p>
-          <p style="font-size:0.85rem; color:var(--muted); margin:0;">Large panels, aging film, and what to expect.</p>
-        </div>
-      </a>
-      <a href="/ppf-removal/paint-correction-after-removal.html" style="text-decoration:none;">
-        <div class="service-card">
-          <h3 style="font-size:0.75rem;">After Removal</h3>
-          <p style="color:var(--white); font-size:1rem; margin-bottom:0.5rem;">Paint Correction After PPF Removal: What to Expect</p>
-          <p style="font-size:0.85rem; color:var(--muted); margin:0;">Polishing, blending, and restoring a uniform finish.</p>
-        </div>
-      </a>
-    </div>
-    <div style="text-align:center; margin-top:3rem;">
-      <a href="/ppf-removal/" class="btn btn-ghost">View All Guides →</a>
-    </div>
-  </div>
-</section>
+    </section>
 
-<hr class="divider">
+    <!-- Decision Help -->
+    <section class="decision-help">
+        <div class="container">
+            <h2>Not Sure Which Path Fits?</h2>
+            <p>You don't have to decide now.</p>
+            <p>When you apply, I'll ask: How do you drive? Where does the car live? What's failing right now? What bothers you most when you look at it?</p>
+            <p>From that, I can tell you quickly whether Reality Reset or Protection Matrix makes more sense.</p>
+            <p style="margin-top: 2rem;">
+                <strong>Your job is to be honest.</strong><br>
+                <strong>My job is to match you with the right path and do the work.</strong>
+            </p>
+        </div>
+    </section>
 
-<div id="cta-band">
-  <h2>The Window for Clean Removal Is Closing.</h2>
-  <p>Brittle film doesn't peel. It flakes. It gets harder every season you wait.</p>
-  <a href="#book" class="btn">Book Your Inspection →</a>
-</div>
+    <!-- Application Form -->
+    <section id="application" class="application-form">
+        <div class="container">
+            <h2>Apply For A Spot</h2>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto;">I work on a limited appointment calendar. There's no "book now" button because I refuse to oversell the schedule.<br><br>Use the form below to raise your hand.</p>
 
-<section id="book">
-  <div class="inner">
-    <span class="label">Get Started</span>
-    <h2>Book a Film Inspection</h2>
-    <p>Tell us about your vehicle and what you're seeing. We'll assess the job, walk you through the risks, and give you a firm quote.</p>
-    <form id="bookingForm">
-      <div class="form-grid">
-        <div class="form-group">
-          <label for="firstName">First Name</label>
-          <input type="text" id="firstName" name="firstName" required />
-        </div>
-        <div class="form-group">
-          <label for="lastName">Last Name</label>
-          <input type="text" id="lastName" name="lastName" required />
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" name="phone" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="form-group">
-          <label for="year">Vehicle Year</label>
-          <input type="text" id="year" name="year" placeholder="e.g. 2017" />
-        </div>
-        <div class="form-group">
-          <label for="make">Make</label>
-          <input type="text" id="make" name="make" placeholder="e.g. Porsche" />
-        </div>
-        <div class="form-group full">
-          <label for="model">Model</label>
-          <input type="text" id="model" name="model" placeholder="e.g. 911 Carrera S" />
-        </div>
-        <div class="form-group">
-          <label for="coverage">PPF Coverage Area</label>
-          <select id="coverage" name="coverage">
-            <option value="">Select coverage</option>
-            <option>Partial panels</option>
-            <option>Front clip</option>
-            <option>Full vehicle</option>
-            <option>Not sure</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="condition">Film Condition</label>
-          <select id="condition" name="condition">
-            <option value="">Select condition</option>
-            <option>Yellowing</option>
-            <option>Peeling edges</option>
-            <option>Cracking</option>
-            <option>Multiple issues</option>
-            <option>Not sure</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="priorWork">Prior body or paint work?</label>
-          <select id="priorWork" name="priorWork">
-            <option value="">Select option</option>
-            <option>Yes</option>
-            <option>No</option>
-            <option>Unknown</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="source">How did you hear about us?</label>
-          <select id="source" name="source">
-            <option value="">Select source</option>
-            <option>Google Search</option>
-            <option>Referral</option>
-            <option>Social Media</option>
-            <option>Other</option>
-          </select>
-        </div>
-        <div class="form-group full">
-          <label for="notes">Additional Notes</label>
-          <textarea id="notes" name="notes" placeholder="Describe what you're seeing, any known history, questions..."></textarea>
-        </div>
-      </div>
-      <div class="form-submit">
-        <button type="submit" class="btn btn-primary" id="submitBtn">Request Inspection →</button>
-      </div>
-      <div id="form-status"></div>
-      <p class="form-note">We typically respond within one business day. For urgent inquiries, call or text directly.</p>
-    </form>
-  </div>
-</section>
+            <form name="texas-shine-application" method="POST" data-netlify="true" action="/success.html">
+                <!-- Netlify form name hidden field -->
+                <input type="hidden" name="form-name" value="texas-shine-application">
+                
+                <!-- Honeypot field for spam prevention -->
+                <p style="display: none;">
+                    <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                </p>
 
-<footer>
-  <div class="footer-brand">
-    <a class="nav-logo" href="#">ATX CLEAR BRA</a>
-    <p>Austin's dedicated PPF removal specialists. Film doesn't last forever. Safe removal does.</p>
-  </div>
-  <div class="footer-links">
-    <h4>Pages</h4>
-    <ul>
-      <li><a href="#problem">The Problem</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#risk">Risk Disclosure</a></li>
-      <li><a href="#book">Book Inspection</a></li>
-    </ul>
-  </div>
-  <div class="footer-links">
-    <h4>Contact</h4>
-    <ul>
-      <li><a href="tel:5126638976">(512) 663-8976</a></li>
-      <li><a href="mailto:texasshine@gmail.com">texasshine@gmail.com</a></li>
-      <li><a href="#">Austin, TX</a></li>
-    </ul>
-  </div>
-</footer>
-<div class="footer-bottom">© 2026 ATX Clear Bra · Austin, TX · All rights reserved.</div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
 
-<script>
-  // ── Mobile nav ──
-  document.getElementById('navToggle').addEventListener('click', () => {
-    document.getElementById('navLinks').classList.toggle('open');
-  });
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-  // ── Form → Netlify proxy → Airtable ──
-  // API keys live in Netlify environment variables (never in client code).
-  // The proxy endpoint is defined in netlify.toml: /api/* → /.netlify/functions/:splat
-  const PROXY = '/api/airtable';
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
 
-  document.getElementById('bookingForm').addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const btn    = document.getElementById('submitBtn');
-    const status = document.getElementById('form-status');
-    btn.textContent = 'Sending…';
-    btn.disabled    = true;
-    status.className = '';
-    status.textContent = '';
+                <div class="form-group">
+                    <label for="vehicle">Year / Make / Model</label>
+                    <input type="text" id="vehicle" name="vehicle" required>
+                </div>
 
-    const payload = {
-      table: 'Leads',
-      fields: {
-        'First Name':      document.getElementById('firstName').value,
-        'Last Name':       document.getElementById('lastName').value,
-        'Phone':           document.getElementById('phone').value,
-        'Email':           document.getElementById('email').value,
-        'Vehicle Year':    document.getElementById('year').value,
-        'Make':            document.getElementById('make').value,
-        'Model':           document.getElementById('model').value,
-        'Coverage Area':   document.getElementById('coverage').value,
-        'Film Condition':  document.getElementById('condition').value,
-        'Prior Paint Work':document.getElementById('priorWork').value,
-        'Source':          document.getElementById('source').value,
-        'Notes':           document.getElementById('notes').value,
-      }
-    };
+                <div class="form-group">
+                    <label for="usage">How do you use the car?</label>
+                    <select id="usage" name="usage" required>
+                        <option value="">Select...</option>
+                        <option value="daily">Daily driver</option>
+                        <option value="occasional">Occasional use</option>
+                        <option value="weekend">Weekend car</option>
+                    </select>
+                </div>
 
-    try {
-      const res  = await fetch(PROXY, {
-        method:  'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify(payload)
-      });
-      const data = await res.json();
+                <div class="form-group">
+                    <label for="parking">Where does it live?</label>
+                    <select id="parking" name="parking" required>
+                        <option value="">Select...</option>
+                        <option value="garage">Garage</option>
+                        <option value="carport">Carport</option>
+                        <option value="street">Street parking</option>
+                        <option value="lot">Parking lot</option>
+                    </select>
+                </div>
 
-      if (res.ok && data.id) {
-        status.className   = 'success';
-        status.textContent = '✓ Request received. We\'ll be in touch within one business day.';
-        document.getElementById('bookingForm').reset();
-      } else {
-        throw new Error(data.error || data.message || 'Submission failed');
-      }
-    } catch (err) {
-      status.className   = 'error';
-      status.textContent = 'Something went wrong. Please call or text us directly at (512) 663-8976.';
-      console.error(err);
-    } finally {
-      btn.textContent = 'Request Inspection →';
-      btn.disabled    = false;
-    }
-  });
-</script>
+                <div class="form-group">
+                    <label for="ownership">How long do you plan to keep it?</label>
+                    <input type="text" id="ownership" name="ownership" placeholder="e.g., 5+ years, indefinitely, 2-3 years" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="concerns">What's failing or bothering you most about the paint right now?</label>
+                    <textarea id="concerns" name="concerns" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="preference">Which path are you leaning toward?</label>
+                    <select id="preference" name="preference" required>
+                        <option value="">Select...</option>
+                        <option value="red">Red Pill (Reality Reset)</option>
+                        <option value="blue">Blue Pill (Protection Matrix)</option>
+                        <option value="unsure">Not sure yet</option>
+                    </select>
+                </div>
+
+                <div class="form-note">
+                    <p style="margin: 0;">I review every application personally. If it's a fit, I'll follow up with available dates, a clear game plan, and what to expect on dropoff.<br><br>No pressure. No hard sell. This is for people ready to do it right.</p>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2>Questions Before You Apply</h2>
+
+            <div class="faq-item">
+                <h4>Is there a fixed price list?</h4>
+                <p>No. I price based on condition, goals, and the path we choose. I'll give you a clear range after I see the car and your answers.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>How long will you have my car?</h4>
+                <p>Most jobs are one to two days. Paint correction or PPF removal can take longer. We'll discuss timing before you pay a deposit.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Do you do quick interior details?</h4>
+                <p>My focus is on full transformation and protection projects. If you only want a quick clean, I'm not your best option.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>Do you guarantee perfection?</h4>
+                <p>I guarantee integrity and full effort. Perfection depends on the starting point and your budget. I never promise what I can't deliver.</p>
+            </div>
+
+            <div class="faq-item">
+                <h4>What happens after the work is done?</h4>
+                <p>I'll show you how to maintain the car and I'm available for future maintenance or questions if you want a long-term relationship with the shop.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="closing">
+        <div class="container">
+            <h2>This Is Your Paint. This Is Your Call.</h2>
+            <p>You can keep doing what everyone else does. Wash, hope, and be disappointed.</p>
+            <p>Or you can commit once, pick the path that fits, and let someone who has lived in this world for 23 years take it from there.</p>
+            <p style="font-size: 1.4rem; font-weight: 600; color: #fff;">
+                Red Pill or Blue Pill.<br>
+                Reality reset or protection matrix.
+            </p>
+            <p>Either way, the first step is the same.</p>
+            <a href="#application" class="btn btn-primary" style="font-size: 1.2rem; padding: 20px 50px;">Apply For A Spot</a>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission - Netlify handles this automatically
+        // The form will submit to Netlify and redirect to success.html
+        document.querySelector('form').addEventListener('submit', function(e) {
+            // Let Netlify handle the submission naturally
+            // No need to prevent default - form will POST to Netlify
+        });
+    </script>
 </body>
 </html>

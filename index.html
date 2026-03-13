@@ -24,7 +24,7 @@
   ]
 }
 </script>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Texas Shine - Choose Your Reality</title>
     <style>
@@ -569,13 +569,10 @@
             <h2>Apply For A Spot</h2>
             <p style="text-align: center; max-width: 800px; margin: 0 auto;">I work on a limited appointment calendar. There's no "book now" button because I refuse to oversell the schedule.<br><br>Use the form below to raise your hand.</p>
 
-            <form name="texas-shine-application" method="POST" data-netlify="true" action="/success.html">
-                <!-- Netlify form name hidden field -->
-                <input type="hidden" name="form-name" value="texas-shine-application">
-                
+            <form id="application-form" name="texas-shine-application">
                 <!-- Honeypot field for spam prevention -->
                 <p style="display: none;">
-                    <label>Don't fill this out if you're human: <input name="bot-field"></label>
+                    <label>Don't fill this out if you're human: <input name="bot-field" id="bot-field"></label>
                 </p>
 
                 <div class="form-group">
@@ -602,9 +599,9 @@
                     <label for="usage">How do you use the car?</label>
                     <select id="usage" name="usage" required>
                         <option value="">Select...</option>
-                        <option value="daily">Daily driver</option>
-                        <option value="occasional">Occasional use</option>
-                        <option value="weekend">Weekend car</option>
+                        <option value="Daily driver">Daily driver</option>
+                        <option value="Occasional use">Occasional use</option>
+                        <option value="Weekend car">Weekend car</option>
                     </select>
                 </div>
 
@@ -612,10 +609,10 @@
                     <label for="parking">Where does it live?</label>
                     <select id="parking" name="parking" required>
                         <option value="">Select...</option>
-                        <option value="garage">Garage</option>
-                        <option value="carport">Carport</option>
-                        <option value="street">Street parking</option>
-                        <option value="lot">Parking lot</option>
+                        <option value="Garage">Garage</option>
+                        <option value="Carport">Carport</option>
+                        <option value="Street parking">Street parking</option>
+                        <option value="Parking lot">Parking lot</option>
                     </select>
                 </div>
 
@@ -633,9 +630,9 @@
                     <label for="preference">Which path are you leaning toward?</label>
                     <select id="preference" name="preference" required>
                         <option value="">Select...</option>
-                        <option value="red">Red Pill (Reality Reset)</option>
-                        <option value="blue">Blue Pill (Protection Matrix)</option>
-                        <option value="unsure">Not sure yet</option>
+                        <option value="Red Pill (Reality Reset)">Red Pill (Reality Reset)</option>
+                        <option value="Blue Pill (Protection Matrix)">Blue Pill (Protection Matrix)</option>
+                        <option value="Not sure yet">Not sure yet</option>
                     </select>
                 </div>
 
@@ -643,7 +640,10 @@
                     <p style="margin: 0;">I review every application personally. If it's a fit, I'll follow up with available dates, a clear game plan, and what to expect on dropoff.<br><br>No pressure. No hard sell. This is for people ready to do it right.</p>
                 </div>
 
-                <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Application</button>
+                <button type="submit" class="btn btn-primary" style="width: 100%;" id="submit-btn">Submit Application</button>
+                
+                <!-- Status message -->
+                <div id="form-status" style="margin-top: 1.5rem; padding: 1rem; border-radius: 6px; display: none;"></div>
             </form>
         </div>
     </section>
@@ -695,68 +695,100 @@
         </div>
     </section>
 
-<script>
-  // ── Mobile nav ──
-  document.getElementById('navToggle').addEventListener('click', () => {
-    document.getElementById('navLinks').classList.toggle('open');
-  });
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
 
-  // ── Form → Netlify proxy → Airtable ──
-  // API keys live in Netlify environment variables (never in client code).
-  // The proxy endpoint is defined in netlify.toml: /api/* → /.netlify/functions/:splat
-  const PROXY = '/api/airtable';
+        // ============================================================
+        // FORM SUBMISSION to Airtable via Netlify Function
+        // ============================================================
+        const form = document.getElementById('application-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const formStatus = document.getElementById('form-status');
 
-  document.getElementById('bookingForm').addEventListener('submit', async function (e) {
-    e.preventDefault();
-    const btn    = document.getElementById('submitBtn');
-    const status = document.getElementById('form-status');
-    btn.textContent = 'Sending…';
-    btn.disabled    = true;
-    status.className = '';
-    status.textContent = '';
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
 
-    const payload = {
-      table: 'Leads',
-      fields: {
-        'First Name':      document.getElementById('firstName').value,
-        'Last Name':       document.getElementById('lastName').value,
-        'Phone':           document.getElementById('phone').value,
-        'Email':           document.getElementById('email').value,
-        'Vehicle Year':    document.getElementById('year').value,
-        'Make':            document.getElementById('make').value,
-        'Model':           document.getElementById('model').value,
-        'Coverage Area':   document.getElementById('coverage').value,
-        'Film Condition':  document.getElementById('condition').value,
-        'Prior Paint Work':document.getElementById('priorWork').value,
-        'Source':          document.getElementById('source').value,
-        'Notes':           document.getElementById('notes').value,
-      }
-    };
+            // Check honeypot
+            const botField = document.getElementById('bot-field');
+            if (botField && botField.value) {
+                console.log('Bot detected');
+                return;
+            }
 
-    try {
-      const res  = await fetch(PROXY, {
-        method:  'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify(payload)
-      });
-      const data = await res.json();
+            // Disable submit button
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Submitting...';
 
-      if (res.ok && data.id) {
-        status.className   = 'success';
-        status.textContent = '✓ Request received. We\'ll be in touch within one business day.';
-        document.getElementById('bookingForm').reset();
-      } else {
-        throw new Error(data.error || data.message || 'Submission failed');
-      }
-    } catch (err) {
-      status.className   = 'error';
-      status.textContent = 'Something went wrong. Please call or text us directly at (512) 663-8976.';
-      console.error(err);
-    } finally {
-      btn.textContent = 'Request Inspection →';
-      btn.disabled    = false;
-    }
-  });
-</script>
+            // Collect form data
+            const formData = {
+                Name: document.getElementById('name').value,
+                Email: document.getElementById('email').value,
+                Phone: document.getElementById('phone').value,
+                Vehicle: document.getElementById('vehicle').value,
+                Usage: document.getElementById('usage').value,
+                Parking: document.getElementById('parking').value,
+                Ownership: document.getElementById('ownership').value,
+                Concerns: document.getElementById('concerns').value,
+                Preference: document.getElementById('preference').value,
+                Submitted: new Date().toISOString()
+            };
+
+            try {
+                // Submit to Netlify function
+                const response = await fetch('/.netlify/functions/airtable', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        table: 'Applications', // Change this to match your Airtable table name
+                        fields: formData
+                    })
+                });
+
+                const result = await response.json();
+
+                if (response.ok) {
+                    // Success - redirect to success page or show message
+                    formStatus.style.display = 'block';
+                    formStatus.style.background = '#166534';
+                    formStatus.style.color = '#fff';
+                    formStatus.textContent = 'Application submitted successfully! We\'ll be in touch soon.';
+                    
+                    // Reset form
+                    form.reset();
+                    
+                    // Optional: redirect to success page after 2 seconds
+                    setTimeout(() => {
+                        window.location.href = '/success.html';
+                    }, 2000);
+                } else {
+                    throw new Error(result.error || 'Submission failed');
+                }
+            } catch (error) {
+                console.error('Submission error:', error);
+                formStatus.style.display = 'block';
+                formStatus.style.background = '#991b1b';
+                formStatus.style.color = '#fff';
+                formStatus.textContent = 'Something went wrong. Please try again or email directly.';
+            } finally {
+                // Re-enable submit button
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Submit Application';
+            }
+        });
+    </script>
 </body>
 </html>

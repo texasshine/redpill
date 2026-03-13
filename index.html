@@ -731,7 +731,7 @@
             submitBtn.disabled = true;
             submitBtn.textContent = 'Submitting...';
 
-            // Collect form data
+            // Collect form data matching Airtable field names exactly
             const formData = {
                 Name: document.getElementById('name').value,
                 Email: document.getElementById('email').value,
@@ -741,8 +741,7 @@
                 Parking: document.getElementById('parking').value,
                 Ownership: document.getElementById('ownership').value,
                 Concerns: document.getElementById('concerns').value,
-                Preference: document.getElementById('preference').value,
-                Submitted: new Date().toISOString()
+                Preference: document.getElementById('preference').value
             };
 
             try {
@@ -753,7 +752,7 @@
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        table: 'Leads', // Change this to match your Airtable table name
+                        table: 'Leads',
                         fields: formData
                     })
                 });
@@ -761,7 +760,7 @@
                 const result = await response.json();
 
                 if (response.ok) {
-                    // Success - redirect to success page or show message
+                    // Success - show message
                     formStatus.style.display = 'block';
                     formStatus.style.background = '#166534';
                     formStatus.style.color = '#fff';
@@ -771,9 +770,10 @@
                     form.reset();
                     
                     // Optional: redirect to success page after 2 seconds
-                    setTimeout(() => {
-                        window.location.href = '/success.html';
-                    }, 2000);
+                    // Uncomment the next 3 lines if you have a success.html page
+                    // setTimeout(() => {
+                    //     window.location.href = '/success.html';
+                    // }, 2000);
                 } else {
                     throw new Error(result.error || 'Submission failed');
                 }
